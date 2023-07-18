@@ -1,0 +1,4 @@
+/tmp/*
+/sstate-cache/*
+/cache/*
+/downloads/*
