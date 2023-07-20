@@ -3309,3 +3309,260 @@ sys:1: ResourceWarning: unclosed file <_io.TextIOWrapper name='/home/ats/project
 2794788 16:31:43.693644 Original lockfile contents: ['2794788\n']
 2794788 16:31:43.694518 Exiting as we could obtain the lock
 sys:1: ResourceWarning: unclosed file <_io.TextIOWrapper name='/home/ats/projects/yocto/raspberry_pi/build-rpi/bitbake-cookerdaemon.log' mode='a+' encoding='UTF-8'>
+4056786 17:41:49.802364 --- Starting bitbake server pid 4056786 at 2023-07-19 17:41:49.802349 ---
+4056786 17:41:49.803110 Started bitbake server pid 4056786
+4056786 17:41:49.803227 Entering server connection loop
+4056786 17:41:49.803426 Accepting [<socket.socket fd=6, family=AddressFamily.AF_UNIX, type=SocketKind.SOCK_STREAM, proto=0, laddr=bitbake.sock>] ([])
+4056786 17:41:49.803910 Processing Client
+4056786 17:41:49.803940 Connecting Client
+4056786 17:41:49.804093 Running command ['setFeatures', [2, 1]]
+4056786 17:41:49.804142 Command Completed
+4056786 17:41:49.804645 Running command ['updateConfig', {'halt': True, 'force': False, 'invalidate_stamp': None, 'dry_run': False, 'dump_signatures': [], 'extra_assume_provided': [], 'profile': False, 'prefile': [], 'postfile': [], 'server_timeout': None, 'nosetscene': False, 'setsceneonly': False, 'skipsetscene': False, 'runall': None, 'runonly': None, 'writeeventlog': None, 'build_verbose_shell': False, 'build_verbose_stdout': False, 'default_loglevel': 20, 'debug_domains': {}}, {'SHELL': '/bin/bash', 'BB_ENV_PASSTHROUGH_ADDITIONS': 'ALL_PROXY BBPATH_EXTRA BB_LOGCONFIG BB_NO_NETWORK BB_NUMBER_THREADS BB_SETSCENE_ENFORCE BB_SRCREV_POLICY DISTRO FTPS_PROXY FTP_PROXY GIT_PROXY_COMMAND HTTPS_PROXY HTTP_PROXY MACHINE NO_PROXY PARALLEL_MAKE SCREENDIR SDKMACHINE SOCKS5_PASSWD SOCKS5_USER SSH_AGENT_PID SSH_AUTH_SOCK STAMPS_DIR TCLIBC TCMODE all_proxy ftp_proxy ftps_proxy http_proxy https_proxy no_proxy ', 'SSH_AUTH_SOCK': '/run/user/1000/keyring/ssh', 'PWD': '/home/ats/projects/yocto/raspberry_pi/build-rpi', 'LOGNAME': 'ats', 'HOME': '/home/ats', 'BBPATH': '/home/ats/projects/yocto/raspberry_pi/build-rpi', 'USER': 'ats', 'PATH': '/home/ats/projects/yocto/raspberry_pi/poky/scripts:/home/ats/projects/yocto/raspberry_pi/poky/bitbake/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin', 'LC_ALL': 'en_US.UTF-8', 'SESSION_MANAGER': 'local/ats-ThinkPad-T14s-Gen-1:@/tmp/.ICE-unix/2354,unix/ats-ThinkPad-T14s-Gen-1:/tmp/.ICE-unix/2354', 'QT_ACCESSIBILITY': '1', 'COLORTERM': 'truecolor', 'XDG_CONFIG_DIRS': '/etc/xdg/xdg-ubuntu:/etc/xdg', 'SSH_AGENT_LAUNCHER': 'gnome-keyring', 'XDG_MENU_PREFIX': 'gnome-', 'GNOME_DESKTOP_SESSION_ID': 'this-is-deprecated', 'LANGUAGE': 'en_GB:en', 'GNOME_SHELL_SESSION_MODE': 'ubuntu', 'XMODIFIERS': '@im=ibus', 'DESKTOP_SESSION': 'ubuntu', 'GTK_MODULES': 'gail:atk-bridge', 'XDG_SESSION_DESKTOP': 'ubuntu', 'XDG_SESSION_TYPE': 'wayland', 'SYSTEMD_EXEC_PID': '2373', 'XAUTHORITY': '/run/user/1000/.mutter-Xwaylandauth.DHQS71', 'USERNAME': 'ats', 'IM_CONFIG_PHASE': '1', 'LANG': 'en_GB.UTF-8', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:', 'XDG_CURRENT_DESKTOP': 'ubuntu:GNOME', 'VTE_VERSION': '6800', 'WAYLAND_DISPLAY': 'wayland-0', 'GNOME_TERMINAL_SCREEN': '/org/gnome/Terminal/screen/e73307cb_8332_42fe_b357_8464a434630f', 'GNOME_SETUP_DISPLAY': ':1', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'XDG_SESSION_CLASS': 'user', 'PYTHONPATH': '/home/ats/projects/yocto/raspberry_pi/poky/bitbake/lib:/home/ats/projects/yocto/raspberry_pi/poky/bitbake/lib:/home/ats/projects/yocto/raspberry_pi/poky/bitbake/lib:', 'TERM': 'xterm-256color', 'LESSOPEN': '| /usr/bin/lesspipe %s', 'GNOME_TERMINAL_SERVICE': ':1.125', 'DISPLAY': ':0', 'SHLVL': '1', 'QT_IM_MODULE': 'ibus', 'XDG_RUNTIME_DIR': '/run/user/1000', 'XDG_DATA_DIRS': '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop', 'GDMSESSION': 'ubuntu', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'BUILDDIR': '/home/ats/projects/yocto/raspberry_pi/build-rpi', 'OLDPWD': '/home/ats/projects/yocto/raspberry_pi', '_': '/home/ats/projects/yocto/raspberry_pi/poky/bitbake/bin/bitbake-layers'}, ['/home/ats/projects/yocto/raspberry_pi/poky/bitbake/bin/bitbake-layers', 'add-layer', '../meta-ruby/']]
+4056786 17:41:50.088852 Command Completed
+4056786 17:41:50.089148 Running command ['parseConfiguration']
+4056786 17:41:50.090415 Command Completed
+4056786 17:41:50.090562 Running command ['dataStoreConnectorCmd', 0, 'getVar', ('BBMULTICONFIG',), {}]
+4056786 17:41:50.090683 Command Completed
+4056786 17:41:50.090866 Running command ['dataStoreConnectorCmd', 0, 'getVar', ('BBPATH',), {}]
+4056786 17:41:50.090981 Command Completed
+4056786 17:41:50.096452 Running command ['dataStoreConnectorCmd', 0, 'getVar', ('BBLAYERS',), {}]
+4056786 17:41:50.096562 Command Completed
+4056786 17:41:50.096714 Running command ['dataStoreConnectorVarHistCmd', 0, 'get_variable_items_files', ('BBFILE_COLLECTIONS',), {}]
+4056786 17:41:50.096856 Command Completed
+4056786 17:41:50.098239 Running command ['dataStoreConnectorCmd', 0, 'getVar', ('BBLAYERS',), {}]
+4056786 17:41:50.098339 Command Completed
+4056786 17:41:50.098468 Running command ['dataStoreConnectorVarHistCmd', 0, 'get_variable_items_files', ('BBFILE_COLLECTIONS',), {}]
+4056786 17:41:50.098573 Command Completed
+4056786 17:41:50.099386 Running command ['dataStoreConnectorCmd', 0, 'getVar', ('BBLAYERS',), {}]
+4056786 17:41:50.099479 Command Completed
+4056786 17:41:50.099617 Running command ['dataStoreConnectorVarHistCmd', 0, 'get_variable_items_files', ('BBFILE_COLLECTIONS',), {}]
+4056786 17:41:50.099759 Command Completed
+4056786 17:41:50.100277 Running command ['dataStoreConnectorCmd', 0, 'getVar', ('BBLAYERS',), {}]
+4056786 17:41:50.100371 Command Completed
+4056786 17:41:50.100514 Running command ['dataStoreConnectorVarHistCmd', 0, 'get_variable_items_files', ('BBFILE_COLLECTIONS',), {}]
+4056786 17:41:50.100632 Command Completed
+4056786 17:41:50.101625 Running command ['parseConfiguration']
+4056786 17:41:50.289548 Command Completed
+4056786 17:41:50.289852 Running command ['clientComplete']
+4056786 17:41:50.289912 Command Completed
+4056786 17:41:50.290115 Processing Client
+4056786 17:41:50.290147 Disconnecting Client
+4056786 17:41:50.290226 No timeout, exiting.
+4056786 17:41:50.390659 Exiting
+4056786 17:41:50.398925 Original lockfile contents: ['4056786\n']
+4056786 17:41:50.399834 Exiting as we could obtain the lock
+sys:1: ResourceWarning: unclosed file <_io.TextIOWrapper name='/home/ats/projects/yocto/raspberry_pi/build-rpi/bitbake-cookerdaemon.log' mode='a+' encoding='UTF-8'>
+4056806 17:42:02.029930 --- Starting bitbake server pid 4056806 at 2023-07-19 17:42:02.029913 ---
+4056806 17:42:02.030499 Started bitbake server pid 4056806
+4056806 17:42:02.030632 Entering server connection loop
+4056806 17:42:02.030829 Accepting [<socket.socket fd=6, family=AddressFamily.AF_UNIX, type=SocketKind.SOCK_STREAM, proto=0, laddr=bitbake.sock>] ([])
+4056806 17:42:02.031313 Processing Client
+4056806 17:42:02.031343 Connecting Client
+4056806 17:42:02.031502 Running command ['setFeatures', [2, 1]]
+4056806 17:42:02.031553 Command Completed
+4056806 17:42:02.032054 Running command ['updateConfig', {'halt': True, 'force': False, 'invalidate_stamp': None, 'dry_run': False, 'dump_signatures': [], 'extra_assume_provided': [], 'profile': False, 'prefile': [], 'postfile': [], 'server_timeout': None, 'nosetscene': False, 'setsceneonly': False, 'skipsetscene': False, 'runall': None, 'runonly': None, 'writeeventlog': None, 'build_verbose_shell': False, 'build_verbose_stdout': False, 'default_loglevel': 20, 'debug_domains': {}}, {'SHELL': '/bin/bash', 'BB_ENV_PASSTHROUGH_ADDITIONS': 'ALL_PROXY BBPATH_EXTRA BB_LOGCONFIG BB_NO_NETWORK BB_NUMBER_THREADS BB_SETSCENE_ENFORCE BB_SRCREV_POLICY DISTRO FTPS_PROXY FTP_PROXY GIT_PROXY_COMMAND HTTPS_PROXY HTTP_PROXY MACHINE NO_PROXY PARALLEL_MAKE SCREENDIR SDKMACHINE SOCKS5_PASSWD SOCKS5_USER SSH_AGENT_PID SSH_AUTH_SOCK STAMPS_DIR TCLIBC TCMODE all_proxy ftp_proxy ftps_proxy http_proxy https_proxy no_proxy ', 'SSH_AUTH_SOCK': '/run/user/1000/keyring/ssh', 'PWD': '/home/ats/projects/yocto/raspberry_pi/build-rpi', 'LOGNAME': 'ats', 'HOME': '/home/ats', 'BBPATH': '/home/ats/projects/yocto/raspberry_pi/build-rpi', 'USER': 'ats', 'PATH': '/home/ats/projects/yocto/raspberry_pi/poky/scripts:/home/ats/projects/yocto/raspberry_pi/poky/bitbake/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin', 'LC_ALL': 'en_US.UTF-8', 'SESSION_MANAGER': 'local/ats-ThinkPad-T14s-Gen-1:@/tmp/.ICE-unix/2354,unix/ats-ThinkPad-T14s-Gen-1:/tmp/.ICE-unix/2354', 'QT_ACCESSIBILITY': '1', 'COLORTERM': 'truecolor', 'XDG_CONFIG_DIRS': '/etc/xdg/xdg-ubuntu:/etc/xdg', 'SSH_AGENT_LAUNCHER': 'gnome-keyring', 'XDG_MENU_PREFIX': 'gnome-', 'GNOME_DESKTOP_SESSION_ID': 'this-is-deprecated', 'LANGUAGE': 'en_GB:en', 'GNOME_SHELL_SESSION_MODE': 'ubuntu', 'XMODIFIERS': '@im=ibus', 'DESKTOP_SESSION': 'ubuntu', 'GTK_MODULES': 'gail:atk-bridge', 'XDG_SESSION_DESKTOP': 'ubuntu', 'XDG_SESSION_TYPE': 'wayland', 'SYSTEMD_EXEC_PID': '2373', 'XAUTHORITY': '/run/user/1000/.mutter-Xwaylandauth.DHQS71', 'USERNAME': 'ats', 'IM_CONFIG_PHASE': '1', 'LANG': 'en_GB.UTF-8', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:', 'XDG_CURRENT_DESKTOP': 'ubuntu:GNOME', 'VTE_VERSION': '6800', 'WAYLAND_DISPLAY': 'wayland-0', 'GNOME_TERMINAL_SCREEN': '/org/gnome/Terminal/screen/e73307cb_8332_42fe_b357_8464a434630f', 'GNOME_SETUP_DISPLAY': ':1', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'XDG_SESSION_CLASS': 'user', 'PYTHONPATH': '/home/ats/projects/yocto/raspberry_pi/poky/bitbake/lib:/home/ats/projects/yocto/raspberry_pi/poky/bitbake/lib:/home/ats/projects/yocto/raspberry_pi/poky/bitbake/lib:', 'TERM': 'xterm-256color', 'LESSOPEN': '| /usr/bin/lesspipe %s', 'GNOME_TERMINAL_SERVICE': ':1.125', 'DISPLAY': ':0', 'SHLVL': '1', 'QT_IM_MODULE': 'ibus', 'XDG_RUNTIME_DIR': '/run/user/1000', 'XDG_DATA_DIRS': '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop', 'GDMSESSION': 'ubuntu', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'BUILDDIR': '/home/ats/projects/yocto/raspberry_pi/build-rpi', 'OLDPWD': '/home/ats/projects/yocto/raspberry_pi', '_': '/home/ats/projects/yocto/raspberry_pi/poky/bitbake/bin/bitbake-layers'}, ['/home/ats/projects/yocto/raspberry_pi/poky/bitbake/bin/bitbake-layers', 'show-layers']]
+4056806 17:42:02.315202 Command Completed
+4056806 17:42:02.315508 Running command ['parseConfiguration']
+4056806 17:42:02.316829 Command Completed
+4056806 17:42:02.317016 Running command ['dataStoreConnectorCmd', 0, 'getVar', ('BBMULTICONFIG',), {}]
+4056806 17:42:02.317137 Command Completed
+4056806 17:42:02.317311 Running command ['dataStoreConnectorCmd', 0, 'getVar', ('BBPATH',), {}]
+4056806 17:42:02.317429 Command Completed
+4056806 17:42:02.321451 Running command ['dataStoreConnectorCmd', 0, 'getVar', ('BBLAYERS',), {}]
+4056806 17:42:02.321561 Command Completed
+4056806 17:42:02.321714 Running command ['dataStoreConnectorVarHistCmd', 0, 'get_variable_items_files', ('BBFILE_COLLECTIONS',), {}]
+4056806 17:42:02.321865 Command Completed
+4056806 17:42:02.323251 Running command ['dataStoreConnectorCmd', 0, 'getVar', ('BBLAYERS',), {}]
+4056806 17:42:02.323346 Command Completed
+4056806 17:42:02.323482 Running command ['dataStoreConnectorVarHistCmd', 0, 'get_variable_items_files', ('BBFILE_COLLECTIONS',), {}]
+4056806 17:42:02.323611 Command Completed
+4056806 17:42:02.324456 Running command ['dataStoreConnectorCmd', 0, 'getVar', ('BBLAYERS',), {}]
+4056806 17:42:02.324555 Command Completed
+4056806 17:42:02.324645 Running command ['dataStoreConnectorVarHistCmd', 0, 'get_variable_items_files', ('BBFILE_COLLECTIONS',), {}]
+4056806 17:42:02.324749 Command Completed
+4056806 17:42:02.325230 Running command ['dataStoreConnectorCmd', 0, 'getVar', ('BBLAYERS',), {}]
+4056806 17:42:02.325351 Command Completed
+4056806 17:42:02.325422 Running command ['dataStoreConnectorVarHistCmd', 0, 'get_variable_items_files', ('BBFILE_COLLECTIONS',), {}]
+4056806 17:42:02.325520 Command Completed
+4056806 17:42:02.325817 Running command ['getLayerPriorities']
+4056806 17:42:02.326024 Command Completed
+4056806 17:42:02.326982 Running command ['clientComplete']
+4056806 17:42:02.327032 Command Completed
+4056806 17:42:02.327364 Processing Client
+4056806 17:42:02.327397 Disconnecting Client
+4056806 17:42:02.327495 No timeout, exiting.
+4056806 17:42:02.427799 Exiting
+4056806 17:42:02.431314 Original lockfile contents: ['4056806\n']
+4056806 17:42:02.432215 Exiting as we could obtain the lock
+sys:1: ResourceWarning: unclosed file <_io.TextIOWrapper name='/home/ats/projects/yocto/raspberry_pi/build-rpi/bitbake-cookerdaemon.log' mode='a+' encoding='UTF-8'>
+4056981 17:55:48.169473 --- Starting bitbake server pid 4056981 at 2023-07-19 17:55:48.169457 ---
+4056981 17:55:48.170036 Started bitbake server pid 4056981
+4056981 17:55:48.170158 Entering server connection loop
+4056981 17:55:48.170341 Accepting [<socket.socket fd=6, family=AddressFamily.AF_UNIX, type=SocketKind.SOCK_STREAM, proto=0, laddr=bitbake.sock>] ([])
+4056981 17:55:48.170835 Processing Client
+4056981 17:55:48.170865 Connecting Client
+4056981 17:55:48.171022 Running command ['setFeatures', [2, 1]]
+4056981 17:55:48.171071 Command Completed
+4056981 17:55:48.171523 Running command ['updateConfig', {'halt': True, 'force': False, 'invalidate_stamp': None, 'dry_run': False, 'dump_signatures': [], 'extra_assume_provided': [], 'profile': False, 'prefile': [], 'postfile': [], 'server_timeout': None, 'nosetscene': False, 'setsceneonly': False, 'skipsetscene': False, 'runall': None, 'runonly': None, 'writeeventlog': None, 'build_verbose_shell': False, 'build_verbose_stdout': False, 'default_loglevel': 20, 'debug_domains': {}}, {'SHELL': '/bin/bash', 'BB_ENV_PASSTHROUGH_ADDITIONS': 'ALL_PROXY BBPATH_EXTRA BB_LOGCONFIG BB_NO_NETWORK BB_NUMBER_THREADS BB_SETSCENE_ENFORCE BB_SRCREV_POLICY DISTRO FTPS_PROXY FTP_PROXY GIT_PROXY_COMMAND HTTPS_PROXY HTTP_PROXY MACHINE NO_PROXY PARALLEL_MAKE SCREENDIR SDKMACHINE SOCKS5_PASSWD SOCKS5_USER SSH_AGENT_PID SSH_AUTH_SOCK STAMPS_DIR TCLIBC TCMODE all_proxy ftp_proxy ftps_proxy http_proxy https_proxy no_proxy ', 'SSH_AUTH_SOCK': '/run/user/1000/keyring/ssh', 'PWD': '/home/ats/projects/yocto/raspberry_pi/build-rpi', 'LOGNAME': 'ats', 'HOME': '/home/ats', 'BBPATH': '/home/ats/projects/yocto/raspberry_pi/build-rpi', 'USER': 'ats', 'PATH': '/home/ats/projects/yocto/raspberry_pi/poky/scripts:/home/ats/projects/yocto/raspberry_pi/poky/bitbake/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin', 'LC_ALL': 'en_US.UTF-8', 'SESSION_MANAGER': 'local/ats-ThinkPad-T14s-Gen-1:@/tmp/.ICE-unix/2354,unix/ats-ThinkPad-T14s-Gen-1:/tmp/.ICE-unix/2354', 'QT_ACCESSIBILITY': '1', 'COLORTERM': 'truecolor', 'XDG_CONFIG_DIRS': '/etc/xdg/xdg-ubuntu:/etc/xdg', 'SSH_AGENT_LAUNCHER': 'gnome-keyring', 'XDG_MENU_PREFIX': 'gnome-', 'GNOME_DESKTOP_SESSION_ID': 'this-is-deprecated', 'LANGUAGE': 'en_GB:en', 'GNOME_SHELL_SESSION_MODE': 'ubuntu', 'XMODIFIERS': '@im=ibus', 'DESKTOP_SESSION': 'ubuntu', 'GTK_MODULES': 'gail:atk-bridge', 'XDG_SESSION_DESKTOP': 'ubuntu', 'XDG_SESSION_TYPE': 'wayland', 'SYSTEMD_EXEC_PID': '2373', 'XAUTHORITY': '/run/user/1000/.mutter-Xwaylandauth.DHQS71', 'USERNAME': 'ats', 'IM_CONFIG_PHASE': '1', 'LANG': 'en_GB.UTF-8', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:', 'XDG_CURRENT_DESKTOP': 'ubuntu:GNOME', 'VTE_VERSION': '6800', 'WAYLAND_DISPLAY': 'wayland-0', 'GNOME_TERMINAL_SCREEN': '/org/gnome/Terminal/screen/e73307cb_8332_42fe_b357_8464a434630f', 'GNOME_SETUP_DISPLAY': ':1', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'XDG_SESSION_CLASS': 'user', 'PYTHONPATH': '/home/ats/projects/yocto/raspberry_pi/poky/bitbake/lib:/home/ats/projects/yocto/raspberry_pi/poky/bitbake/lib:/home/ats/projects/yocto/raspberry_pi/poky/bitbake/lib:', 'TERM': 'xterm-256color', 'LESSOPEN': '| /usr/bin/lesspipe %s', 'GNOME_TERMINAL_SERVICE': ':1.125', 'DISPLAY': ':0', 'SHLVL': '1', 'QT_IM_MODULE': 'ibus', 'XDG_RUNTIME_DIR': '/run/user/1000', 'XDG_DATA_DIRS': '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop', 'GDMSESSION': 'ubuntu', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'BUILDDIR': '/home/ats/projects/yocto/raspberry_pi/build-rpi', 'OLDPWD': '/home/ats/projects/yocto/raspberry_pi', '_': '/home/ats/projects/yocto/raspberry_pi/poky/bitbake/bin/bitbake'}, ['/home/ats/projects/yocto/raspberry_pi/poky/bitbake/bin/bitbake', 'rpi-test-image']]
+4056981 17:55:48.455283 Command Completed
+4056981 17:55:48.455597 Running command ['getVariable', 'BBINCLUDELOGS']
+4056981 17:55:48.455737 Command Completed
+4056981 17:55:48.455900 Running command ['getVariable', 'BBINCLUDELOGS_LINES']
+4056981 17:55:48.456000 Command Completed
+4056981 17:55:48.456135 Running command ['getSetVariable', 'BB_CONSOLELOG']
+4056981 17:55:48.456310 Command Completed
+4056981 17:55:48.456410 Running command ['getSetVariable', 'BB_LOGCONFIG']
+4056981 17:55:48.456498 Command Completed
+4056981 17:55:48.459460 Running command ['getUIHandlerNum']
+4056981 17:55:48.459615 Command Completed
+4056981 17:55:48.459775 Running command ['setEventMask', 1, 20, {'BitBake.SigGen.HashEquiv': 19, 'BitBake.RunQueue.HashEquiv': 19}, ['bb.runqueue.runQueueExitWait', 'bb.event.LogExecTTY', 'logging.LogRecord', 'bb.build.TaskFailed', 'bb.build.TaskBase', 'bb.event.ParseStarted', 'bb.event.ParseProgress', 'bb.event.ParseCompleted', 'bb.event.CacheLoadStarted', 'bb.event.CacheLoadProgress', 'bb.event.CacheLoadCompleted', 'bb.command.CommandFailed', 'bb.command.CommandExit', 'bb.command.CommandCompleted', 'bb.cooker.CookerExit', 'bb.event.MultipleProviders', 'bb.event.NoProvider', 'bb.runqueue.sceneQueueTaskStarted', 'bb.runqueue.runQueueTaskStarted', 'bb.runqueue.runQueueTaskFailed', 'bb.runqueue.sceneQueueTaskFailed', 'bb.event.BuildBase', 'bb.build.TaskStarted', 'bb.build.TaskSucceeded', 'bb.build.TaskFailedSilent', 'bb.build.TaskProgress', 'bb.event.ProcessStarted', 'bb.event.ProcessProgress', 'bb.event.ProcessFinished']]
+4056981 17:55:48.459878 Command Completed
+4056981 17:55:48.460005 Running command ['getVariable', 'BB_DEFAULT_TASK']
+4056981 17:55:48.460093 Command Completed
+4056981 17:55:48.460182 Running command ['setConfig', 'cmd', 'build']
+4056981 17:55:48.460255 Command Completed
+4056981 17:55:48.460329 Running command ['buildTargets', ['rpi-test-image'], 'build']
+4056981 17:55:48.460368 Command Completed
+Server refused shutdown.  Remaining client fds: 1
+Client pids: 4063111
+Server will shut down after all clients exit.
+Server refused shutdown.  Remaining client fds: 1
+Client pids: 4063300
+Server will shut down after all clients exit.
+Server refused shutdown.  Remaining client fds: 4
+Client pids: 4063878
+Server will shut down after all clients exit.
+Server refused shutdown.  Remaining client fds: 1
+Client pids: 4063878
+Server will shut down after all clients exit.
+Server refused shutdown.  Remaining client fds: 1
+Client pids: 4087010
+Server will shut down after all clients exit.
+Server refused shutdown.  Remaining client fds: 1
+Client pids: 4087378
+Server will shut down after all clients exit.
+Server refused shutdown.  Remaining client fds: 1
+Client pids: 4087389
+Server will shut down after all clients exit.
+Server refused shutdown.  Remaining client fds: 4
+Client pids: 4089638
+Server will shut down after all clients exit.
+Server refused shutdown.  Remaining client fds: 1
+Client pids: 4089638
+Server will shut down after all clients exit.
+4056981 18:01:12.040095 Processing Client
+4056981 18:01:12.040160 Disconnecting Client
+4056981 18:01:12.040344 No timeout, exiting.
+4056981 18:01:12.140724 Exiting
+4056981 18:01:12.162424 Original lockfile contents: ['4056981\n']
+4056981 18:01:12.162652 Exiting as we could obtain the lock
+sys:1: ResourceWarning: unclosed file <_io.TextIOWrapper name='/home/ats/projects/yocto/raspberry_pi/build-rpi/bitbake-cookerdaemon.log' mode='a+' encoding='UTF-8'>
+4093983 18:28:08.349160 --- Starting bitbake server pid 4093983 at 2023-07-19 18:28:08.349145 ---
+4093983 18:28:08.349717 Started bitbake server pid 4093983
+4093983 18:28:08.349834 Entering server connection loop
+4093983 18:28:08.350026 Accepting [<socket.socket fd=6, family=AddressFamily.AF_UNIX, type=SocketKind.SOCK_STREAM, proto=0, laddr=bitbake.sock>] ([])
+4093983 18:28:08.350517 Processing Client
+4093983 18:28:08.350547 Connecting Client
+4093983 18:28:08.350701 Running command ['setFeatures', [2, 1]]
+4093983 18:28:08.350751 Command Completed
+4093983 18:28:08.351216 Running command ['updateConfig', {'halt': True, 'force': False, 'invalidate_stamp': None, 'dry_run': False, 'dump_signatures': [], 'extra_assume_provided': [], 'profile': False, 'prefile': [], 'postfile': [], 'server_timeout': None, 'nosetscene': False, 'setsceneonly': False, 'skipsetscene': False, 'runall': None, 'runonly': None, 'writeeventlog': None, 'build_verbose_shell': False, 'build_verbose_stdout': False, 'default_loglevel': 20, 'debug_domains': {}}, {'SHELL': '/bin/bash', 'BB_ENV_PASSTHROUGH_ADDITIONS': 'ALL_PROXY BBPATH_EXTRA BB_LOGCONFIG BB_NO_NETWORK BB_NUMBER_THREADS BB_SETSCENE_ENFORCE BB_SRCREV_POLICY DISTRO FTPS_PROXY FTP_PROXY GIT_PROXY_COMMAND HTTPS_PROXY HTTP_PROXY MACHINE NO_PROXY PARALLEL_MAKE SCREENDIR SDKMACHINE SOCKS5_PASSWD SOCKS5_USER SSH_AGENT_PID SSH_AUTH_SOCK STAMPS_DIR TCLIBC TCMODE all_proxy ftp_proxy ftps_proxy http_proxy https_proxy no_proxy ', 'SSH_AUTH_SOCK': '/run/user/1000/keyring/ssh', 'PWD': '/home/ats/projects/yocto/raspberry_pi/build-rpi', 'LOGNAME': 'ats', 'HOME': '/home/ats', 'BBPATH': '/home/ats/projects/yocto/raspberry_pi/build-rpi', 'USER': 'ats', 'PATH': '/home/ats/projects/yocto/raspberry_pi/poky/scripts:/home/ats/projects/yocto/raspberry_pi/poky/bitbake/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin', 'LC_ALL': 'en_US.UTF-8', 'SESSION_MANAGER': 'local/ats-ThinkPad-T14s-Gen-1:@/tmp/.ICE-unix/2354,unix/ats-ThinkPad-T14s-Gen-1:/tmp/.ICE-unix/2354', 'QT_ACCESSIBILITY': '1', 'COLORTERM': 'truecolor', 'XDG_CONFIG_DIRS': '/etc/xdg/xdg-ubuntu:/etc/xdg', 'SSH_AGENT_LAUNCHER': 'gnome-keyring', 'XDG_MENU_PREFIX': 'gnome-', 'GNOME_DESKTOP_SESSION_ID': 'this-is-deprecated', 'LANGUAGE': 'en_GB:en', 'GNOME_SHELL_SESSION_MODE': 'ubuntu', 'XMODIFIERS': '@im=ibus', 'DESKTOP_SESSION': 'ubuntu', 'GTK_MODULES': 'gail:atk-bridge', 'XDG_SESSION_DESKTOP': 'ubuntu', 'XDG_SESSION_TYPE': 'wayland', 'SYSTEMD_EXEC_PID': '2373', 'XAUTHORITY': '/run/user/1000/.mutter-Xwaylandauth.DHQS71', 'USERNAME': 'ats', 'IM_CONFIG_PHASE': '1', 'LANG': 'en_GB.UTF-8', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:', 'XDG_CURRENT_DESKTOP': 'ubuntu:GNOME', 'VTE_VERSION': '6800', 'WAYLAND_DISPLAY': 'wayland-0', 'GNOME_TERMINAL_SCREEN': '/org/gnome/Terminal/screen/e73307cb_8332_42fe_b357_8464a434630f', 'GNOME_SETUP_DISPLAY': ':1', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'XDG_SESSION_CLASS': 'user', 'PYTHONPATH': '/home/ats/projects/yocto/raspberry_pi/poky/bitbake/lib:/home/ats/projects/yocto/raspberry_pi/poky/bitbake/lib:/home/ats/projects/yocto/raspberry_pi/poky/bitbake/lib:', 'TERM': 'xterm-256color', 'LESSOPEN': '| /usr/bin/lesspipe %s', 'GNOME_TERMINAL_SERVICE': ':1.125', 'DISPLAY': ':0', 'SHLVL': '1', 'QT_IM_MODULE': 'ibus', 'XDG_RUNTIME_DIR': '/run/user/1000', 'XDG_DATA_DIRS': '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop', 'GDMSESSION': 'ubuntu', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'BUILDDIR': '/home/ats/projects/yocto/raspberry_pi/build-rpi', 'OLDPWD': '/home/ats/projects/yocto/raspberry_pi', '_': '/home/ats/projects/yocto/raspberry_pi/poky/bitbake/bin/bitbake'}, ['/home/ats/projects/yocto/raspberry_pi/poky/bitbake/bin/bitbake', 'rpi-test-image']]
+4093983 18:28:08.638300 Command Completed
+4093983 18:28:08.638593 Running command ['getVariable', 'BBINCLUDELOGS']
+4093983 18:28:08.638724 Command Completed
+4093983 18:28:08.638866 Running command ['getVariable', 'BBINCLUDELOGS_LINES']
+4093983 18:28:08.638967 Command Completed
+4093983 18:28:08.639103 Running command ['getSetVariable', 'BB_CONSOLELOG']
+4093983 18:28:08.639261 Command Completed
+4093983 18:28:08.639346 Running command ['getSetVariable', 'BB_LOGCONFIG']
+4093983 18:28:08.639430 Command Completed
+4093983 18:28:08.640683 Running command ['getUIHandlerNum']
+4093983 18:28:08.640783 Command Completed
+4093983 18:28:08.640938 Running command ['setEventMask', 1, 20, {'BitBake.SigGen.HashEquiv': 19, 'BitBake.RunQueue.HashEquiv': 19}, ['bb.runqueue.runQueueExitWait', 'bb.event.LogExecTTY', 'logging.LogRecord', 'bb.build.TaskFailed', 'bb.build.TaskBase', 'bb.event.ParseStarted', 'bb.event.ParseProgress', 'bb.event.ParseCompleted', 'bb.event.CacheLoadStarted', 'bb.event.CacheLoadProgress', 'bb.event.CacheLoadCompleted', 'bb.command.CommandFailed', 'bb.command.CommandExit', 'bb.command.CommandCompleted', 'bb.cooker.CookerExit', 'bb.event.MultipleProviders', 'bb.event.NoProvider', 'bb.runqueue.sceneQueueTaskStarted', 'bb.runqueue.runQueueTaskStarted', 'bb.runqueue.runQueueTaskFailed', 'bb.runqueue.sceneQueueTaskFailed', 'bb.event.BuildBase', 'bb.build.TaskStarted', 'bb.build.TaskSucceeded', 'bb.build.TaskFailedSilent', 'bb.build.TaskProgress', 'bb.event.ProcessStarted', 'bb.event.ProcessProgress', 'bb.event.ProcessFinished']]
+4093983 18:28:08.641044 Command Completed
+4093983 18:28:08.641175 Running command ['getVariable', 'BB_DEFAULT_TASK']
+4093983 18:28:08.641269 Command Completed
+4093983 18:28:08.641407 Running command ['setConfig', 'cmd', 'build']
+4093983 18:28:08.641510 Command Completed
+4093983 18:28:08.641650 Running command ['buildTargets', ['rpi-test-image'], 'build']
+4093983 18:28:08.641699 Command Completed
+Server refused shutdown.  Remaining client fds: 1
+Client pids: 4094083
+Server will shut down after all clients exit.
+4093983 18:28:24.294951 Processing Client
+4093983 18:28:24.295001 Disconnecting Client
+4093983 18:28:24.295132 No timeout, exiting.
+4093983 18:28:24.395728 Exiting
+4093983 18:28:24.413684 Original lockfile contents: ['4093983\n']
+4093983 18:28:24.414526 Exiting as we could obtain the lock
+sys:1: ResourceWarning: unclosed file <_io.TextIOWrapper name='/home/ats/projects/yocto/raspberry_pi/build-rpi/bitbake-cookerdaemon.log' mode='a+' encoding='UTF-8'>
+4095566 18:38:40.920142 --- Starting bitbake server pid 4095566 at 2023-07-19 18:38:40.920127 ---
+4095566 18:38:40.920715 Started bitbake server pid 4095566
+4095566 18:38:40.920853 Entering server connection loop
+4095566 18:38:40.921044 Accepting [<socket.socket fd=6, family=AddressFamily.AF_UNIX, type=SocketKind.SOCK_STREAM, proto=0, laddr=bitbake.sock>] ([])
+4095566 18:38:40.921543 Processing Client
+4095566 18:38:40.921573 Connecting Client
+4095566 18:38:40.921728 Running command ['setFeatures', [2, 1]]
+4095566 18:38:40.921778 Command Completed
+4095566 18:38:40.922238 Running command ['updateConfig', {'halt': True, 'force': False, 'invalidate_stamp': None, 'dry_run': False, 'dump_signatures': [], 'extra_assume_provided': [], 'profile': False, 'prefile': [], 'postfile': [], 'server_timeout': None, 'nosetscene': False, 'setsceneonly': False, 'skipsetscene': False, 'runall': None, 'runonly': None, 'writeeventlog': None, 'build_verbose_shell': False, 'build_verbose_stdout': False, 'default_loglevel': 20, 'debug_domains': {}}, {'SHELL': '/bin/bash', 'BB_ENV_PASSTHROUGH_ADDITIONS': 'ALL_PROXY BBPATH_EXTRA BB_LOGCONFIG BB_NO_NETWORK BB_NUMBER_THREADS BB_SETSCENE_ENFORCE BB_SRCREV_POLICY DISTRO FTPS_PROXY FTP_PROXY GIT_PROXY_COMMAND HTTPS_PROXY HTTP_PROXY MACHINE NO_PROXY PARALLEL_MAKE SCREENDIR SDKMACHINE SOCKS5_PASSWD SOCKS5_USER SSH_AGENT_PID SSH_AUTH_SOCK STAMPS_DIR TCLIBC TCMODE all_proxy ftp_proxy ftps_proxy http_proxy https_proxy no_proxy ', 'SSH_AUTH_SOCK': '/run/user/1000/keyring/ssh', 'PWD': '/home/ats/projects/yocto/raspberry_pi/build-rpi', 'LOGNAME': 'ats', 'HOME': '/home/ats', 'BBPATH': '/home/ats/projects/yocto/raspberry_pi/build-rpi', 'USER': 'ats', 'PATH': '/home/ats/projects/yocto/raspberry_pi/poky/scripts:/home/ats/projects/yocto/raspberry_pi/poky/bitbake/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin', 'LC_ALL': 'en_US.UTF-8', 'SESSION_MANAGER': 'local/ats-ThinkPad-T14s-Gen-1:@/tmp/.ICE-unix/2354,unix/ats-ThinkPad-T14s-Gen-1:/tmp/.ICE-unix/2354', 'QT_ACCESSIBILITY': '1', 'COLORTERM': 'truecolor', 'XDG_CONFIG_DIRS': '/etc/xdg/xdg-ubuntu:/etc/xdg', 'SSH_AGENT_LAUNCHER': 'gnome-keyring', 'XDG_MENU_PREFIX': 'gnome-', 'GNOME_DESKTOP_SESSION_ID': 'this-is-deprecated', 'LANGUAGE': 'en_GB:en', 'GNOME_SHELL_SESSION_MODE': 'ubuntu', 'XMODIFIERS': '@im=ibus', 'DESKTOP_SESSION': 'ubuntu', 'GTK_MODULES': 'gail:atk-bridge', 'XDG_SESSION_DESKTOP': 'ubuntu', 'XDG_SESSION_TYPE': 'wayland', 'SYSTEMD_EXEC_PID': '2373', 'XAUTHORITY': '/run/user/1000/.mutter-Xwaylandauth.DHQS71', 'USERNAME': 'ats', 'IM_CONFIG_PHASE': '1', 'LANG': 'en_GB.UTF-8', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:', 'XDG_CURRENT_DESKTOP': 'ubuntu:GNOME', 'VTE_VERSION': '6800', 'WAYLAND_DISPLAY': 'wayland-0', 'GNOME_TERMINAL_SCREEN': '/org/gnome/Terminal/screen/e73307cb_8332_42fe_b357_8464a434630f', 'GNOME_SETUP_DISPLAY': ':1', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'XDG_SESSION_CLASS': 'user', 'PYTHONPATH': '/home/ats/projects/yocto/raspberry_pi/poky/bitbake/lib:/home/ats/projects/yocto/raspberry_pi/poky/bitbake/lib:/home/ats/projects/yocto/raspberry_pi/poky/bitbake/lib:', 'TERM': 'xterm-256color', 'LESSOPEN': '| /usr/bin/lesspipe %s', 'GNOME_TERMINAL_SERVICE': ':1.125', 'DISPLAY': ':0', 'SHLVL': '1', 'QT_IM_MODULE': 'ibus', 'XDG_RUNTIME_DIR': '/run/user/1000', 'XDG_DATA_DIRS': '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop', 'GDMSESSION': 'ubuntu', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'BUILDDIR': '/home/ats/projects/yocto/raspberry_pi/build-rpi', 'OLDPWD': '/home/ats/projects/yocto/raspberry_pi', '_': '/home/ats/projects/yocto/raspberry_pi/poky/bitbake/bin/bitbake'}, ['/home/ats/projects/yocto/raspberry_pi/poky/bitbake/bin/bitbake', 'rpi-test-image']]
+4095566 18:38:41.208105 Command Completed
+4095566 18:38:41.208426 Running command ['getVariable', 'BBINCLUDELOGS']
+4095566 18:38:41.208558 Command Completed
+4095566 18:38:41.208653 Running command ['getVariable', 'BBINCLUDELOGS_LINES']
+4095566 18:38:41.208738 Command Completed
+4095566 18:38:41.208829 Running command ['getSetVariable', 'BB_CONSOLELOG']
+4095566 18:38:41.208963 Command Completed
+4095566 18:38:41.209060 Running command ['getSetVariable', 'BB_LOGCONFIG']
+4095566 18:38:41.209148 Command Completed
+4095566 18:38:41.210363 Running command ['getUIHandlerNum']
+4095566 18:38:41.210457 Command Completed
+4095566 18:38:41.210569 Running command ['setEventMask', 1, 20, {'BitBake.SigGen.HashEquiv': 19, 'BitBake.RunQueue.HashEquiv': 19}, ['bb.runqueue.runQueueExitWait', 'bb.event.LogExecTTY', 'logging.LogRecord', 'bb.build.TaskFailed', 'bb.build.TaskBase', 'bb.event.ParseStarted', 'bb.event.ParseProgress', 'bb.event.ParseCompleted', 'bb.event.CacheLoadStarted', 'bb.event.CacheLoadProgress', 'bb.event.CacheLoadCompleted', 'bb.command.CommandFailed', 'bb.command.CommandExit', 'bb.command.CommandCompleted', 'bb.cooker.CookerExit', 'bb.event.MultipleProviders', 'bb.event.NoProvider', 'bb.runqueue.sceneQueueTaskStarted', 'bb.runqueue.runQueueTaskStarted', 'bb.runqueue.runQueueTaskFailed', 'bb.runqueue.sceneQueueTaskFailed', 'bb.event.BuildBase', 'bb.build.TaskStarted', 'bb.build.TaskSucceeded', 'bb.build.TaskFailedSilent', 'bb.build.TaskProgress', 'bb.event.ProcessStarted', 'bb.event.ProcessProgress', 'bb.event.ProcessFinished']]
+4095566 18:38:41.210664 Command Completed
+4095566 18:38:41.210755 Running command ['getVariable', 'BB_DEFAULT_TASK']
+4095566 18:38:41.210833 Command Completed
+4095566 18:38:41.210922 Running command ['setConfig', 'cmd', 'build']
+4095566 18:38:41.211000 Command Completed
+4095566 18:38:41.211088 Running command ['buildTargets', ['rpi-test-image'], 'build']
+4095566 18:38:41.211131 Command Completed
+Server refused shutdown.  Remaining client fds: 1
+Client pids: 4108421
+Server will shut down after all clients exit.
+Server refused shutdown.  Remaining client fds: 1
+Client pids: 4108784
+Server will shut down after all clients exit.
+Server refused shutdown.  Remaining client fds: 1
+Client pids: 4108804
+Server will shut down after all clients exit.
+Server refused shutdown.  Remaining client fds: 4
+Client pids: 4111073
+Server will shut down after all clients exit.
+Server refused shutdown.  Remaining client fds: 1
+Client pids: 4111073
+Server will shut down after all clients exit.
+Server refused shutdown.  Remaining client fds: 1
+Client pids: 4111657
+Server will shut down after all clients exit.
+Server refused shutdown.  Remaining client fds: 1
+Client pids: 4122807
+Server will shut down after all clients exit.
+Server refused shutdown.  Remaining client fds: 1
+Client pids: 4122817
+Server will shut down after all clients exit.
+Server refused shutdown.  Remaining client fds: 6
+Client pids: 4122845
+Server will shut down after all clients exit.
+Server refused shutdown.  Remaining client fds: 3
+Client pids: 4122852
+Server will shut down after all clients exit.
+Server refused shutdown.  Remaining client fds: 1
+Client pids: 4122855
+Server will shut down after all clients exit.
+Server refused shutdown.  Remaining client fds: 1
+Client pids: 4123097
+Server will shut down after all clients exit.
+4095566 18:42:53.266366 Processing Client
+4095566 18:42:53.266418 Disconnecting Client
+4095566 18:42:53.266553 No timeout, exiting.
+4095566 18:42:53.366935 Exiting
+4095566 18:42:53.393683 Original lockfile contents: ['4095566\n']
+4095566 18:42:53.394086 Exiting as we could obtain the lock
+sys:1: ResourceWarning: unclosed file <_io.TextIOWrapper name='/home/ats/projects/yocto/raspberry_pi/build-rpi/bitbake-cookerdaemon.log' mode='a+' encoding='UTF-8'>
